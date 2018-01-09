@@ -12,7 +12,7 @@ class LoginPresenter(private val model: LoginContract.Model) : LoginContract.Pre
         mView = view
     }
 
-    override fun loginButtonClicked() {
+    override fun saveUser() {
         if (mView.getFirstName().trim() == "" || mView.getLastName().trim() == "") {
             mView.showInputError()
         } else {

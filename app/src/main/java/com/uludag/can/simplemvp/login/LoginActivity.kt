@@ -20,7 +20,7 @@ class LoginActivity : AppCompatActivity(), LoginContract.View {
         App.mApplicationComponent.inject(this)
 
         btnSave.setOnClickListener {
-            mPresenter.loginButtonClicked()
+            mPresenter.saveUser()
         }
     }
 
