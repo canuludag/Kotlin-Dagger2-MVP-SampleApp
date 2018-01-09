@@ -17,7 +17,7 @@ class LoginActivity : AppCompatActivity(), LoginContract.View {
         setContentView(R.layout.activity_login)
 
         // Inject dagger
-        (application as App).mApplicationComponent.inject(this)
+        App.mApplicationComponent.inject(this)
 
         btnSave.setOnClickListener {
             mPresenter.loginButtonClicked()
